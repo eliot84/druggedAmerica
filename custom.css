@@ -148,3 +148,62 @@ a{
         h1{
             color:#000033;
         }
+
+/* SCATTERPLOT  */
+p {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+      }
+
+      .button {
+        font-weight: bolder;
+        color: black;
+        cursor: pointer;
+      }
+
+      .buttons {
+        padding: 20px;
+      }
+
+      .selected {
+        background-color: #eee;
+      }
+
+      .chart-title {
+        font-size: 14pt;
+        font-weight: bolder;
+        color: black;
+      }
+
+      svg {
+       /* background-color: #CCE5FA; */
+      }
+
+      .dots {
+        fill: silver;
+      }
+
+      .highlighted {
+        fill: orange;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+      }
+
+      .axis text {
+        font-family: 'Quicksand', sans-serif; 
+        font-size: 11px;
+      }
+
+      .xlabel{
+        font-size: 15px;
+        fill: gray;
+      }
+      .ylabel{
+        font-size: 15px;
+        fill: gray;
+      }
