@@ -1,0 +1,81 @@
+Drug,Year,Eighth,Tenth,Twelfth
+Alcohol,Year 2012,29.50,54.00,69.40
+Alcohol,Year 2013,27.80,52.10,68.20
+Alcohol,Year 2014,26.80,49.30,66.00
+Alcohol,Year 2015,26.10,47.10,64.00
+Cigarettes,Year 2012,15.50,27.70,39.50
+Cigarettes,Year 2013,14.80,25.70,38.10
+Cigarettes,Year 2014,13.50,22.60,34.40
+Cigarettes,Year 2015,13.30,19.90,31.10
+E-Cigarettes,Year 2012,0,0,0
+E-Cigarettes,Year 2013,0,0,0
+E-Cigarettes,Year 2014,8.70,16.20,17.10
+E-Cigarettes,Year 2015,9.50,14.00,16.20
+Smokeless Tobacco,Year 2012,8.10,15.40,17.40
+Smokeless Tobacco,Year 2013,7.90,14.00,17.20
+Smokeless Tobacco,Year 2014,8.00,13.60,15.10
+Smokeless Tobacco,Year 2015,8.60,12.30,13.20
+Illicit Drugs,Year 2012,18.50,36.80,49.10
+Illicit Drugs,Year 2013,20.30,38.80,50.40
+Illicit Drugs,Year 2014,20.30,37.40,49.10
+Illicit Drugs,Year 2015,20.50,34.70,48.90
+Cocaine,Year 2012,1.90,3.30,4.90
+Cocaine,Year 2013,1.70,3.30,4.50
+Cocaine,Year 2014,1.80,2.60,4.60
+Cocaine,Year 2015,1.60,2.70,4.00
+Crack Cocaine,Year 2012,1.00,1.40,2.10
+Crack Cocaine,Year 2013,1.20,1.50,1.80
+Crack Cocaine,Year 2014,1.20,1.00,1.80
+Crack Cocaine,Year 2015,1.00,1.10,1.70
+Hallucinogens,Year 2012,2.80,5.20,7.50
+Hallucinogens,Year 2013,2.50,5.40,7.60
+Hallucinogens,Year 2014,2.00,5.00,6.30
+Hallucinogens,Year 2015,2.00,4.60,6.40
+LSD,Year 2012,1.30,2.60,3.80
+LSD,Year 2013,1.40,2.70,3.90
+LSD,Year 2014,1.10,2.60,3.70
+LSD,Year 2015,1.30,3.00,4.30
+MDMA,Year 2012,2.00,5.00,7.20
+MDMA,Year 2013,1.80,5.70,7.10
+MDMA,Year 2014,1.40,3.70,5.60
+MDMA,Year 2015,2.30,3.80,5.90
+Heroin,Year 2012,0.80,1.10,1.10
+Heroin,Year 2013,1.00,1.00,1.00
+Heroin,Year 2014,0.90,0.90,1.00
+Heroin,Year 2015,0.50,0.70,0.80
+Inhalants,Year 2012,11.80,9.90,7.90
+Inhalants,Year 2013,10.80,8.70,6.90
+Inhalants,Year 2014,10.80,8.70,6.50
+Inhalants,Year 2015,9.40,7.20,5.70
+Marijuana,Year 2012,15.20,33.80,45.20
+Marijuana,Year 2013,16.50,35.80,45.50
+Marijuana,Year 2014,15.60,33.70,44.40
+Marijuana,Year 2015,15.50,31,10,44.70
+Methamphetamine,Year 2012,1.30,1.80,1.70
+Methamphetamine,Year 2013,1.40,1.60,1.50
+Methamphetamine,Year 2014,1.00,1.40,1.90
+Methamphetamine,Year 2015,0.80,1.30,,1.00
+Amphetamine,Year 2012,4.50,8.90,12.00
+Amphetamine,Year 2013,4.20,8.10,12.40
+Amphetamine,Year 2014,6.70,10.60,12.10
+Amphetamine,Year 2015,6.80,9.70,10.80
+Bath Salts,Year 2012,0.80,0.60,1.30
+Bath Salts,Year 2013,1.00,0.90,0.90
+Bath Salts,Year 2014,0.50,0.90,0.90
+Bath Salts,Year 2015,0.40,0.70,1.00
+Adderall,Year 2012,1.70,4.50,7.60
+Adderall,Year 2013,1.80,4.40,7.40
+Adderall,Year 2014,1.30,4.60,6.80
+Adderall,Year 2015,1.00,5.20,7.50
+Cough Medicine,Year 2012,3.00,4.70,5.60
+Cough Medicine,Year 2013,2.90,4.30,5.00
+Cough Medicine,Year 2014,2.00,3.70,4.10
+Cough Medicine,Year 2015,1.60,3.30,4.60
+Tranquilizers,Year 2012,3.00,6.30,8.50
+Tranquilizers,Year 2013,2.90,5.50,7.70
+Tranquilizers,Year 2014,2.90,5.80,7.40
+Tranquilizers,Year 2015,3.00,5.80,6.90
+Steroids,Year 2012,1.20,1.30,1.80
+Steroids,Year 2013,1.10,1.30,2.10
+Steroids,Year 2014,1.00,1.40,1.90
+Steroids,Year 2015,1.00,1.20,2.30

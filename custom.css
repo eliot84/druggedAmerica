@@ -1,0 +1,114 @@
+
+
+
+body{
+  font:10px Helvectica,Arial,sans-serif;
+}
+
+a{
+  color:#821122;
+}
+
+#header{
+  border-bottom:1px solid #ccc;
+  margin:20px 26px 20px 20px;
+}
+#header h1{
+  font-size:2.4em;
+  font-family:Georgia,Palatino,serif;
+  font-weight:normal;
+}
+#header p{
+  font-family:Georgia,Palatino,serif;
+  font-size:1.3em;
+  line-height:1.4em;}
+
+#explain {
+  margin: 0 0 0 20px;
+}
+
+#explain h3{
+  font-size:1.5em;
+  margin:0 0 0.5em 0;
+  padding:0;
+}
+
+#explain p{
+  font-size:1.2em;
+  line-height:1.4em;
+  color:#717171;
+  margin-top:0;
+}
+
+#filters{
+  margin:0 24px 10px 16px;
+  float:right;
+}
+
+.area{
+  fill:#e2e2e2;
+  stroke: #888;
+  stroke-width: 0.5px;
+}
+
+.line {
+  fill:none;
+  stroke:green;
+  stroke-width:1.5px;
+}
+
+.endpoint {
+  fill: steelblue;
+}
+
+#filters table{
+  border-collapse:collapse;
+  border-top:1px solid #ccc;
+}
+
+#filters table td{
+  padding:0;margin:0;
+}
+
+#filters a{
+  display:block;
+  padding:2px 4px;
+  font-size:1.1em;
+  color:#919292;
+  background:#F0F4F5;
+  cursor:pointer;
+  border-left:1px solid #CCCCCC;
+  border-bottom:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  overflow:hidden;
+}
+
+#filters a:hover{
+  text-decoration:underline;
+}
+#filters a.current{
+  background:#fff;color:#000;
+  font-weight:bold;
+}
+#filters a.current:hover{
+  text-decoration:none;
+}
+
+.left{
+  float:left;
+}
+
+.clr{
+  clear:both;
+}
+
+.label {
+  fill: black;
+  font-size: 1.1em;
+}
+
+
+.y.axis text, .axislabel {
+  font-size: .85em;
+  fill: #888;
+}
