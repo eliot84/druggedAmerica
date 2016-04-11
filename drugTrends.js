@@ -1,4 +1,4 @@
-var explain = {
+/*var explain = {
     "Eighth":"Eighth Graders are seen with the lowest levels of drug exposure with the exception of Inhalants which has the highest percentage of users from the 3 grade groups.",
     "Tenth": "Tenth Graders factor higher percentages of drug exposure than eigth graders, but lower than twelfth graders. They are the second highest group of inhalant users.",
     "Twelfth" : "Twelfth Graders show a significantly higher percentage of drug exposure across all drugs listed. They show the least exposure to Methamphetamine and a decline in Marijuana use. This group shows the most trends that are inclining."   
@@ -185,5 +185,5 @@ function typeFix(d) {
   d.Tenth = +d.Tenth;
   d.Twelfth = +d.Twelfth;
   d.date = parseDate(d.Year);
-  return d;
+  return d;*/
 }

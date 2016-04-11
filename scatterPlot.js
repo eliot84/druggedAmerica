@@ -1,3 +1,6 @@
+
+(function() {
+
 var fullwidth = 700;
 			var fullheight = 600;
 			var margin = { top: 20, right: 10, bottom: 50, left: 50 };
@@ -9,11 +12,11 @@ var fullwidth = 700;
 			// plus some padding room!
 			var xScale = d3.scale.linear()
 								.range([ 0, width ])
-								.domain([-2,100]);
+								.domain([-2,20]);
 			// top to bottom, padding just in case
 			var yScale = d3.scale.linear()
 								.range([ height, 0 ])
-								.domain([-2,100]);
+								.domain([-2,20]);
 			//  Custom tick count if you want it.
 			// Create your axes here.
 			var xAxis = d3.svg.axis()
@@ -29,7 +32,7 @@ var fullwidth = 700;
 						.attr("height", fullheight)
 						.append("g")
 						.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-			d3.csv("data/elections.csv", draw);
+			d3.csv("data/overdoseSales.csv", draw);
 		function draw(error, data) {
 			if (error) {
 				console.log("error reading data");
@@ -40,11 +43,11 @@ var fullwidth = 700;
 							.append("circle");
 				// Circles in SVG have cx, cy, and r attributes. x location, y location, radius.
 				circles.attr("cx", function(d) {
-						return xScale(+d.rep2012);
+						return xScale(+d.overdose2010);
 						// return the value to use for your x scale here
 					})
 					.attr("cy", function(d) {
-						return yScale(+d.dem2012);
+						return yScale(+d.sale2010);
 					})
 					.attr("class", function(d){
 						// highlighting some interesting outliers
@@ -57,7 +60,7 @@ var fullwidth = 700;
 					})
 					.append("title")
 					.text(function(d) {
-						return d.state + " Republican: " + d.rep2012 + "% Democrat:" + d.dem2012 + "%";
+						return d.state + " Overdoses: " + d.overdose2010 + "% Prescription Sales:" + d.sale2010 + "%";
 					});
 					// adding a silly intro animation to catch the eye -- using transition:
 					circles.sort(function(a, b) {
@@ -83,13 +86,13 @@ var fullwidth = 700;
 								(height + 20) + ")")
 					.style("text-anchor", "middle")
 					.attr("dy", "12")
-					.text("Republican");
+					.text("Overdose Deaths");
 				svg.append("text")
 					.attr("class", "ylabel")
 					.attr("transform","rotate(-90) translate(" + (-height/2) + ",0)")
 					.style("text-anchor", "middle")
 					.attr("dy", -25)
-					.text("Democrat");
+					.text("Prescription Opioid Sales");
 					// make the default data button look selected
 				d3.select("button#oeight").classed("selected", true);
 				// handle the click events on the 2 buttons:
@@ -110,18 +113,18 @@ var fullwidth = 700;
 							.duration(2000)
 							.attr("cx", function(d) {
 								if (whichbutton === "twelve") {
-									return xScale(+d.rep2012);
+									return xScale(+d.overdose2010);
 								}
 								else { // then it's books:
-									return xScale(+d.rep2008);
+									return xScale(+d.overdose2010);
 								}
 								// return the value to use for your x scale here
 							})
 							.attr("cy", function(d) {
 								if (whichbutton === "twelve") {
-									return yScale(+d.dem2012);
+									return yScale(+d.sale2010);
 								} else {
-									return yScale(+d.dem2008);
+									return yScale(+d.sale2010);
 								}
 							});
 							// We can't transition the new title text -- must remove and rewrite.
@@ -130,16 +133,17 @@ var fullwidth = 700;
 							.append("title")
 							.text(function(d) {
 								if (whichbutton === "twelve") {
-									return d.state + " Republican: " + d.rep2012 + "% Democrat: " + d.dem2012 + "%";
+									return d.state + " Overdoses: " + d.overdose2010 + "% Precription Sales: " + d.sale2010 + "%";
 								} else {
-									return d.state + " Republican: " + d.rep2008 + "% Democrat: " + d.dem2008 + "%";
+									return d.state + " Overdoses: " + d.overdose2010 + "% Prescription Sales: " + d.sale2010 + "%";
 								}
 							});
 							// change the visible title!
 					if (whichbutton === "twelve") {
-						d3.select("p.chart-title").text("2012 Presidential Election");
+						d3.select("p.chart-title").text("2015 Presciption Drug Overdose and Sales Correlation");
 					} else {
-						d3.select("p.chart-title").text("2008 Presidential Election");
+						d3.select("p.chart-title").text("2015 Presciption Drug Overdose and Sales Correlation");
 					}
 				}); // end clicker function
 			};
+})();

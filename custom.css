@@ -1,6 +1,9 @@
 
 
 /* DRUG TRENDS */
+
+
+
 body{
   font:10px Helvectica,Arial,sans-serif;
 }
@@ -206,4 +209,63 @@ p {
       .ylabel{
         font-size: 15px;
         fill: gray;
+      }
+
+  body {
+        background-color: white;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+      }
+
+      svg {
+        background-color: white;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: black;
+        stroke-width: 1px;
+      }
+
+      .line {
+        fill: none;
+        stroke: gray;
+        stroke-width: 2px;
+        stroke-opacity: 80%;
+      }
+
+      .line.unfocused{
+        stroke-opacity: 40%;
+      }
+
+      .line.focused {
+        stroke-width: 3px;
+        stroke-opacity: 100%;
+        stroke: red;
+      }
+
+      .axis text {
+        font-family: sans-serif;
+        font-size: 11px;
+      }
+
+      .tooltip {
+        position: absolute;
+        z-index: 10;
+      }
+
+      .tooltip p {
+        background-color: white;
+        border: none;
+        padding: 2px;
       }
