@@ -73,11 +73,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', 'page4'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#9933ff'],
+				anchors: ['startPage', 'firstPage', 'secondPage', '3rdPage', 'page4'],
+				sectionsColor: ['#00362B', '#00362B', '#1BBC9B', '#7E8F7C', '#9933ff'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page', '4thpage']
+				navigationTooltips: ['landPage', 'First page', 'Second page', 'Third and last page', '4thpage']
 			});
 		});
 	</script>
@@ -85,104 +85,101 @@
 </head>
 <body>
 <div id="fullpage">
+
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
 	<div class="section " id="section0">
 		<div class="intro">
-			<h1>DRUG OVERDOSE RATES</h1>
-<p>Source: National Institute on Drug Abuse https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates</p>
-<div id="overdose"></div>
+			<h1>DRUGGED AMERICA</h1>
+			<p>By: Eliot Allan Rodriguez</p>
 		</div>
 	</div>
-	<div class="section" id="section1">
-<!-- SCATTERPLOT -->
-<h1>SCATTER PLOT</h1>
-<p>Source: CDC  http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6043a4.htm</p>
-<p>2010 National Overdose/Sale correlation</p>
-	<button class="btn btn-default" id="twelve">Show 2012</button>
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+
+
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+	<div class="section " id="section1">
+		<div class="intro">
+			<h1>DRUG OVERDOSE RATES</h1>
+			<p>Source: National Institute on Drug Abuse https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates</p>
+				<div id="overdose"></div>
+		</div>
+	</div>
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+
+
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+	<div class="section" id="section2">
+		<!-- SCATTERPLOT -->
+		<h1>SCATTER PLOT</h1>
+		<p>Source: CDC  http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6043a4.htm</p>
+		<p>2010 National Overdose/Sale correlation</p>
+		<button class="btn btn-default" id="twelve">Show 2012</button>
 		<button class="btn btn-default" id="oeight">Show 2008</button>
 		
-		
-
-
 		<div class="buttons"></div>
 		<div id="scatter"></div>
-
-
-
-
-
-	   
-
 	</div>
-	<div class="section" id="section2">
+    <!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+
+
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+	<div class="section" id="section3">
 		<div class="intro">
 			<!-- Drug Abuse Arrests -->
-<
-<h4>DRUG ABUSE ARRESTS</h4>
-<div class="holdVis">
+		<h4>DRUG ABUSE ARRESTS</h4>
+			<div class="holdVis">
 
-<div class="holdStateOutbreaks">
-<div id="stateOutbreaks" style="margin: 1em"> </div>
-</div><br />
-<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
-<br /><br />
-
-
-
-
-<!-- 2. End Drug Abuse Arrests -->
+			<div class="holdStateOutbreaks">
+				<div id="stateOutbreaks" style="margin: 1em"> </div>
+			</div><br />
+		<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
+		<br /><br />
 		</div>
 	</div>
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
 
-<div class="section" id="section3">
+
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
+	<div class="section" id="section4">
 		<div class="intro">
-	<!-- 1. DRUG TRENDS -->
-<h1>DRUG TRENDS</h1>
-
-
-  <h2>U.S. Highschool Students who have been exposed to Drugs in their Lifetime, 2012 - 2015</h2>
-
-  <p>Source: <a href="https://www.drugabuse.gov/trends-statistics/monitoring-future/monitoring-future-study-trends-in-prevalence-various-drugs">DrugAbuse.gov</a></p>
-
-</div>
-
-<div id="explain" class="left">
-<h3>Eighth</h3>
-<p>Text about drugs grade level here.</p>
-</div>
-
-<div id="filters">
-  <table class="left">
-    <tr>
-      <td><a id="Eighth">Eighth Grade</a></td>
-    </tr>
-    <tr>
-      <td><a  id="Tenth">Tenth Grade</a></td>
-    </tr>
-    <tr>
-      <td><a id="Twelfth">Twelfth Grade</a></td>
-    </tr>
-    </table>
-
-
-</div>
-  <div class="clr"></div>
-  <div id="vis"></div>
-<!-- END 1. DRUG TRENDS -->
+		<!-- 1. DRUG TRENDS -->
+			<h1>DRUG TRENDS</h1>
+			<h2>U.S. Highschool Students who have been exposed to Drugs in their Lifetime, 2012 - 2015</h2>
+			<p>Source: <a href="https://www.drugabuse.gov/trends-statistics/monitoring-future/monitoring-future-study-trends-in-prevalence-various-drugs">DrugAbuse.gov</a></p>
 		</div>
 
+		<div id="explain" class="left">
+			<h3>Eighth</h3>
+			<p>Text about drugs grade level here.</p>
+		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+		<div id="filters">
+  			<table class="left">
+    			<tr>
+     		 		<td><a id="Eighth">Eighth Grade</a></td>
+   			 	</tr>
+    			<tr>
+     			    <td><a  id="Tenth">Tenth Grade</a></td>
+    		    </tr>
+    		 	<tr>
+    	     		<td><a id="Twelfth">Twelfth Grade</a></td>
+    		   </tr>
+   		    </table>
+		</div>
+  			<div class="clr"></div>
+  			<div id="vis"></div>
+	</div>
+	<!-- /////////////////////////////////// -->
+	<!-- /////////////////////////////////// -->
 </div> <!--close all sections -->
 
 
