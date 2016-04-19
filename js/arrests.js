@@ -1,13 +1,18 @@
+
+
         var map = L.map('map').setView([37.8, -96], 4);
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWxpb3Q4NCIsImEiOiJjaW1tMzNtdHUwMzl5b2JtMGNyNXNramxtIn0.y1RSXSQDVyDkNzxaOPGxJQ', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
                 '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
                 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-            id: 'mapbox.light'
+            id: 'mapbox.light',
+            zoomControl:false
         }).addTo(map);
         // control that shows state info on hover
         var info = L.control();
+
+
         info.onAdd = function (map) {
             this._div = L.DomUtil.create('div', 'info');
             this.update();
@@ -90,3 +95,9 @@
             return div;
         };
         legend.addTo(map);
+        map.removeControl(map.zoomControl);
+        map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+map.keyboard.disable();
