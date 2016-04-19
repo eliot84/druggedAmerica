@@ -43,7 +43,7 @@ d3.select("#explain p").html(explain[current]);
 d3.csv("data/drugTrends.csv", typeFix, function(error, data) {
 
   //typeFix is a function that parses the dates and sets the strings to numeric. See below!
-  console.log("data after load", data);
+//  console.log("data after load", data);
 
   // Nest data by symbol.
   drugs = d3.nest()

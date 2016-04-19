@@ -95,9 +95,18 @@
             return div;
         };
         legend.addTo(map);
-        map.removeControl(map.zoomControl);
-        map.dragging.disable();
+
+
+map.removeControl(map.zoomControl);
+map.dragging.disable();
 map.touchZoom.disable();
 map.doubleClickZoom.disable();
 map.scrollWheelZoom.disable();
 map.keyboard.disable();
+
+var mapOverlayHawaii = L.mapbox.map('map-overlay-hawaii', mapid, overlayOptions)
+    .fitBounds([[18.542116654448996,-161.03759765625],[22.573438264572406,-154.22607421875]]);
+
+var mapOverlayAlaska = L.mapbox.map('map-overlay-alaska', mapid, overlayOptions)
+    .fitBounds([[51.72702815704774,-170.15625],[71.85622888185527,-127.61718749999999]]);
+    

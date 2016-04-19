@@ -69,7 +69,7 @@
 
 				//Create a new, empty array to hold our restructured dataset
 				var dataset = [];
-				console.log('theyears: ' + years);
+				//console.log('theyears: ' + years);
 				//Loop once for each row in data
 				data.forEach(function (d, i) {
 
@@ -80,7 +80,7 @@
 
 						// If value is not empty
 						if (d[y]) {
-							console.log(d[y]);
+							//console.log(d[y]);
 							//Add a new object to the new emissions data array - for year, amount
 							overdosesList.push({
 								drug: d.Drug,

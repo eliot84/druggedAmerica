@@ -1,30 +1,98 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<html>
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Horizontal navigation dots - fullPage.js</title>
+	<meta name="author" content="Eliot Allan Rodriguez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- Layout -->
+	<link rel="stylesheet" type="text/css" href="layout/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="layout/examples.css" />
+
+	<!-- D3 -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <!-- for the map -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 	<link rel="stylesheet" type="text/css" href="custom.css">
 
+	<style>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="layout/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="layout/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="layout/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', 'page4'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#9933ff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page', '4thpage']
+			});
+		});
+	</script>
 
 </head>
-
 <body>
-	HELLO!!! WORLD.. world!! :-)
-
-<h1>DRUG OVERDOSE RATES</h1>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>DRUG OVERDOSE RATES</h1>
 <p>Source: National Institute on Drug Abuse https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates</p>
 <div id="overdose"></div>
-
-
-
-
-
-
+		</div>
+	</div>
+	<div class="section" id="section1">
 <!-- SCATTERPLOT -->
 <h1>SCATTER PLOT</h1>
 <p>Source: CDC  http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6043a4.htm</p>
@@ -38,23 +106,36 @@
 		<div class="buttons"></div>
 		<div id="scatter"></div>
 
-<!-- -->
 
 
 
 
+	   
 
-<!-- Drug Abuse Arrests -->
-    <div id="map"></div>
-    <div id='map-overlay-hawaii'></div>
-    <div id='map-overlay-alaska'></div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<!-- Drug Abuse Arrests -->
+<
+<h4>DRUG ABUSE ARRESTS</h4>
+<div class="holdVis">
 
-  
+<div class="holdStateOutbreaks">
+<div id="stateOutbreaks" style="margin: 1em"> </div>
+</div><br />
+<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
+<br /><br />
+
+
 
 
 <!-- 2. End Drug Abuse Arrests -->
+		</div>
+	</div>
 
-<!-- 1. DRUG TRENDS -->
+<div class="section" id="section3">
+		<div class="intro">
+	<!-- 1. DRUG TRENDS -->
 <h1>DRUG TRENDS</h1>
 
 
@@ -87,23 +168,30 @@
   <div class="clr"></div>
   <div id="vis"></div>
 <!-- END 1. DRUG TRENDS -->
+		</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!--close all sections -->
 
 
 
 </body>
 
+
 <script src="overdose.js"></script>
-
 <script src="scatterPlot.js"></script>
-
-
  <script src="js/drugTrends.js"></script>
-
-
- <script src="data/usstates.js"></script>
- <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
- <script src="js/arrests.js"></script>
-
-
+  <script src="js/stateArrests.js"></script>
 </html>
