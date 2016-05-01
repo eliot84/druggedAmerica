@@ -1,253 +1,10 @@
-
-
-/* DRUG TRENDS */
-
-#stateOutbreaks{
-  position: absolute;
-    top: 1px;
-    left: 1px;
-    width:100%;
-    height:100%;
-}
-
-
-
-
-.holdVis{
-    position: relative; 
-    width: 85%;
-    padding-bottom: 40%;
-    height: 0;
-    overflow:hidden;
-}
-
-.holdStateOutbreaks{
-    position: relative; 
-    width: 85%;
-    padding-bottom: 40%;
-    height: 0;
-    overflow:hidden;
-}
-
-
-
-body{
-  font:10px Helvectica,Arial,sans-serif;
-}
-
-a{
-  color:#821122;
-}
-
-#header{
-  border-bottom:1px solid #ccc;
-  margin:20px 26px 20px 20px;
-}
-#header h1{
-  font-size:2.4em;
-  font-family:Georgia,Palatino,serif;
-  font-weight:normal;
-}
-#header p{
-  font-family:Georgia,Palatino,serif;
-  font-size:1.3em;
-  line-height:1.4em;}
-
-#explain {
-  margin: 0 0 0 20px;
-}
-
-#explain h3{
-  font-size:1.5em;
-  margin:0 0 0.5em 0;
-  padding:0;
-}
-
-#explain p{
-  font-size:1.2em;
-  line-height:1.4em;
-  color:#717171;
-  margin-top:0;
-}
-
-#filters{
-  margin:0 24px 10px 16px;
-  float:right;
-}
-
-.area{
-  fill:#e2e2e2;
-  stroke: #888;
-  stroke-width: 0.5px;
-}
-
-.line {
-  fill:none;
-  stroke:green;
-  stroke-width:1.5px;
-}
-
-.endpoint {
-  fill: steelblue;
-}
-
-#filters table{
-  border-collapse:collapse;
-  border-top:1px solid #ccc;
-}
-
-#filters table td{
-  padding:0;margin:0;
-}
-
-#filters a{
-  display:block;
-  padding:2px 4px;
-  font-size:1.1em;
-  color:#919292;
-  background:#F0F4F5;
-  cursor:pointer;
-  border-left:1px solid #CCCCCC;
-  border-bottom:1px solid #CCCCCC;
-  border-right:1px solid #CCCCCC;
-  overflow:hidden;
-}
-
-#filters a:hover{
-  text-decoration:underline;
-}
-#filters a.current{
-  background:#fff;color:#000;
-  font-weight:bold;
-}
-#filters a.current:hover{
-  text-decoration:none;
-}
-
-.left{
-  float:left;
-}
-
-.clr{
-  clear:both;
-}
-
-.label {
-  fill: black;
-  font-size: 1.1em;
-}
-
-
-.y.axis text, .axislabel {
-  font-size: .85em;
-  fill: #888;
-}
-
-/* DRUG ARRESTS */
-        #map {
-            width: 800px;
-            height: 500px;
-        }
-        .info {
-            padding: 6px 8px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
-            background: white;
-            background: rgba(255,255,255,0.8);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;
-        }
-        .info h4 {
-            margin: 0 0 5px;
-            color: #777;
-        }
-        .legend {
-            text-align: left;
-            line-height: 18px;
-            color: #555;
-        }
-        .legend i {
-            width: 18px;
-            height: 18px;
-            float: left;
-            margin-right: 8px;
-            opacity: 0.7;
-        }
-        .intro{
-            width: 800px;
-        }
-        h1{
-            color:#000033;
-        }
-
-/* SCATTERPLOT  */
-p {
-        font-size: 14px;
-        margin: 10px 0 0 0;
-      }
-
-      .button {
-        font-weight: bolder;
-        color: black;
-        cursor: pointer;
-      }
-
-      .buttons {
-        padding: 20px;
-      }
-
-      .selected {
-        background-color: #eee;
-      }
-
-      .chart-title {
-        font-size: 14pt;
-        font-weight: bolder;
-        color: black;
-      }
-
-      svg {
-       /* background-color: #CCE5FA; */
-      }
-
-      .dots {
-        fill: silver;
-      }
-
-      .highlighted {
-        fill: orange;
-      }
-
-      .axis path,
-      .axis line {
-        fill: none;
-        stroke: black;
-        shape-rendering: crispEdges;
-      }
-
-      .axis text {
-        font-family: 'Quicksand', sans-serif; 
-        font-size: 11px;
-      }
-
-      .xlabel{
-        font-size: 15px;
-        fill: gray;
-      }
-      .ylabel{
-        font-size: 15px;
-        fill: gray;
-      }
-
-  body {
+body {
         background-color: white;
         font-family: Helvetica, Arial, sans-serif;
       }
 
-      h1 {
-        font-size: 24px;
-        margin: 0;
-        color: #6DA398;
-      }
+
+
 
       p {
         font-size: 14px;
@@ -255,13 +12,29 @@ p {
       }
 
       svg {
-        /*background-color: white; */
+       /* background-color: white; */
       }
 
+.section{
+  width: 100px;
+}
+#content{
+  height: auto;
+  width: 30%;
+  float: left;
+  background-color: blue;
+}
+
+#overdose{
+  width: 50%;
+  float: right;
+}
+
+/* OVER DOSE MULTILINE CHART */
       .axis path,
       .axis line {
         fill: none;
-        stroke: black;
+        stroke: white;
         stroke-width: 1px;
       }
 
@@ -277,14 +50,16 @@ p {
       }
 
       .line.focused {
-        stroke-width: 3px;
+        stroke-width: 10px;
         stroke-opacity: 100%;
-        stroke: red;
+        stroke:#13B340;
       }
 
       .axis text {
         font-family: sans-serif;
-        font-size: 11px;
+        font-size: 12px;
+        margin-top: 10px;
+        stroke: white;
       }
 
       .tooltip {
@@ -293,8 +68,11 @@ p {
       }
 
       .tooltip p {
-        background-color: white;
+       /* background-color: #43B35F; */
         border: none;
+        font-size: 24px;
         padding: 2px;
+        color: white;
       }
 
+  /* ///////////////////////////////////// */

@@ -1,7 +1,7 @@
 	(function() {
 
-		var fullwidth = 700;
-			var fullheight = 600;
+		var fullwidth = 600;
+			var fullheight = 500;
 			var margin = { top: 20, right: 10, bottom: 40, left: 100};
 
 
