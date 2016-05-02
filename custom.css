@@ -8,34 +8,63 @@ body {
   color: white;
 }
 
+#authorName{
+  font-size: 16px;
+  color: white;
+  margin-left: 1px;
+}
+
 .sectionTitle{
   font-size: 32px;
   color: white;
 }
 
 
-      p {
-        font-size: 14px;
-        margin: 10px 0 0 0;
-      }
 
-      svg {
+
+svg {
        /* background-color: white; */
-      }
+    }
+
 
 .section{
   width: 100%;
 }
 #content{
   height: auto;
-  width: 30%;
-  float: left;
+  width: 400px;
+  float: center;
+}
+
+p{
+  font-size: 12px;
+}
+
+#contentInfo{
+  font-size: 14px;
+  color: white;
+  margin-left: 1px;
+}
+#source{
+  font-size: 12px;
+  color: white;
+  margin-left: 1px;
+  margin-top: 20px;
+  width: 100%;
 
 }
 
 #overdose{
   width: 50%;
   float: right;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: #13B340;
 }
 
 /* OVER DOSE MULTILINE CHART */

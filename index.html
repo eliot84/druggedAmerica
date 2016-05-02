@@ -24,14 +24,11 @@
 	/* Style for our header texts
 	* --------------------------------------- */
 
-	.intro p{
-		color: #fff;
-	}
 
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
-		text-align:center;
+		text-align:left;
 	}
 
 	/* Overwriting styles for control arrows for slides
@@ -86,7 +83,7 @@
 	<div class="section " id="section0">
 		<div class="intro">
 			<h1 class="title">DRUGGED AMERICA</h1>
-			<p>By: Eliot Allan Rodriguez</p>
+			<p id="authorName">By: Eliot Allan Rodriguez</p>
 		</div>
 	</div>
 	<!-- /////////////////////////////////// -->
@@ -97,9 +94,12 @@
 	<!-- /////////////////////////////////// -->
 	<div class="section " id="section1">
 		<div class="intro">
-		
-				<div id="content">	<h1 class="sectionTitle">DRUG OVERDOSE RATES</h1>
-			<p>Source: National Institute on Drug Abuse https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates</p></div>
+				<div id="content">
+					<h1 class="sectionTitle">DRUG OVERDOSE RATES</h1>
+					<p id="contentInfo">Data story content will go here</p>
+					<p id="source">Source: 
+					<a href="https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates" target="_blank">National Institute on Drug Abuse</a></p>
+				</div>
 				<div id="overdose"></div>
 		</div>
 	</div>
