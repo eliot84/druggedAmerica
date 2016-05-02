@@ -3,7 +3,15 @@ body {
         font-family: Helvetica, Arial, sans-serif;
       }
 
+.title{
+  font-size: 42px;
+  color: white;
+}
 
+.sectionTitle{
+  font-size: 32px;
+  color: white;
+}
 
 
       p {
@@ -16,13 +24,13 @@ body {
       }
 
 .section{
-  width: 100px;
+  width: 100%;
 }
 #content{
   height: auto;
   width: 30%;
   float: left;
-  background-color: blue;
+
 }
 
 #overdose{
