@@ -66,7 +66,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['startPage', 'firstPage', 'secondPage', '3rdPage', 'page4'],
-				sectionsColor: ['#00362B', '#00362B', '#1BBC9B', '#7E8F7C', '#9933ff'],
+				sectionsColor: ['#00362B', '#00362B', '#13B340', '#7E8F7C', '#9933ff'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['landPage', 'First page', 'Second page', 'Third and last page', '4thpage']
@@ -95,7 +95,7 @@
 	<div class="section " id="section1">
 		<div class="intro">
 				<div id="content">
-					<h1 class="sectionTitle">DRUG OVERDOSE RATES</h1>
+					<h1>DRUG OVERDOSE RATES</h1>
 					<p id="contentInfo">Data story content will go here</p>
 					<p id="source">Source: 
 					<a href="https://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates" target="_blank">National Institute on Drug Abuse</a></p>
@@ -111,14 +111,26 @@
 	<!-- /////////////////////////////////// -->
 	<div class="section" id="section2">
 		<!-- SCATTERPLOT -->
+		<div id="content">
 		<h1>SCATTER PLOT</h1>
+		<p>* Deaths per 100,000 population in 2008; age-adjusted to the 2000 U.S. standard population using the vintage 2008 population.
+† Percentage of persons aged ≥12 years using OPR nonmedically during 2008--2009.
+§ Kilograms of OPR sold per 10,000 population in morphine equivalents in 2010.
+¶ Rate is not significantly different from the national rate.
+** Death rates from Georgia are based on preliminary numbers of deaths and might be underestimates.
+†† The rate is not presented when the estimate is unstable because the number of deaths is less than 20.
+</p>
 		<p>Source: CDC  http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6043a4.htm</p>
+		<p>Source: CDC  http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6450a3.htm</p>
 		<p>2010 National Overdose/Sale correlation</p>
-		<button class="btn btn-default" id="twelve">Show 2012</button>
-		<button class="btn btn-default" id="oeight">Show 2008</button>
+		</div> <!-- content -->
+
+	
 		
 		<div class="buttons"></div>
-		<div id="scatter"></div>
+		<div id="scatter">	<button class="btn btn-default" id="twelve">Show 2012</button>
+		<button class="btn btn-default" id="oeight">Show 2008</button></div>
+		</div> <!-- content -->
 	</div>
     <!-- /////////////////////////////////// -->
 	<!-- /////////////////////////////////// -->

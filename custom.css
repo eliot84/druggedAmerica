@@ -32,7 +32,7 @@ svg {
 }
 #content{
   height: auto;
-  width: 400px;
+  width: 350px;
   float: center;
 }
 
@@ -55,7 +55,12 @@ p{
 }
 
 #overdose{
-  width: 50%;
+  width: 65%;
+  float: right;
+}
+
+#scatter{
+  width: 65%;
   float: right;
 }
 
