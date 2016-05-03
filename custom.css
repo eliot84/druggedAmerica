@@ -19,9 +19,6 @@ body {
   color: white;
 }
 
-
-
-
 svg {
        /* background-color: white; */
     }
@@ -30,10 +27,16 @@ svg {
 .section{
   width: 100%;
 }
+
+#wrapper{
+  width: auto;
+
+}
+
 #content{
   height: auto;
   width: 350px;
-  float: center;
+  float: left;
 }
 
 p{
