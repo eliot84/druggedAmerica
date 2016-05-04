@@ -66,10 +66,10 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['startPage', 'firstPage', 'secondPage', '3rdPage', 'page4'],
-				sectionsColor: ['#00362B', '#00362B', '#13B340', '#7E8F7C', '#9933ff'],
+				sectionsColor: ['#00362B', '#00362B', '#13B340', '#7E8F7C', '#00362B'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['landPage', 'First page', 'Second page', 'Third and last page', '4thpage']
+				navigationTooltips: ['landPage', 'First page', 'Second page', 'Thirdpage', 'High School Drug Trends']
 			});
 		});
 	</script>
@@ -143,6 +143,7 @@
 	<div class="section" id="section3">
 		<div class="intro">
 			<!-- Drug Abuse Arrests -->
+			<!--
 		<h4>DRUG ABUSE ARRESTS</h4>
 			<div class="holdVis">
 
@@ -151,6 +152,7 @@
 			</div><br />
 		<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
 		<br /><br />
+	-->
 		</div>
 	</div>
 	<!-- /////////////////////////////////// -->
@@ -162,17 +164,18 @@
 	<div class="section" id="section4">
 		<div class="intro">
 		<!-- 1. DRUG TRENDS -->
+		<!--
 			<h1>DRUG TRENDS</h1>
 			<h2>U.S. Highschool Students who have been exposed to Drugs in their Lifetime, 2012 - 2015</h2>
-			<p>Source: <a href="https://www.drugabuse.gov/trends-statistics/monitoring-future/monitoring-future-study-trends-in-prevalence-various-drugs">DrugAbuse.gov</a></p>
-		</div>
+			<p>Source: <a href="https://www.drugabuse.gov/trends-statistics/monitoring-future/monitoring-future-study-trends-in-prevalence-various-drugs">DrugAbuse.gov</a></p> -->
 
-		<div id="explain" class="left">
-			<h3>Eighth</h3>
-			<p>Text about drugs grade level here.</p>
-		</div>
+		<div id="wrapper">
+						
+			<p>Based on the small multiples chart below, we can see trends that affect all highschool grade levels as well as grade specific trends. In all grade levels, we see large increases in E-cigeratte usage, while regular cigeratte usage is declining. Based on the data, LSD and MDMA are also inclining across all grade levels, while Methamphetamine are in sharp decline.</p>
+			<p>Tip: Use the grade level tool bar to view the results across the different grade levels.</p>
+	
 
-		<div id="filters">
+<div id="filters">
   			<table class="left">
     			<tr>
      		 		<td><a id="Eighth">Eighth Grade</a></td>
@@ -187,10 +190,13 @@
 		</div>
   			<div class="clr"></div>
   			<div id="vis"></div>
-	</div>
+
+</div> <!-- wrapper -->
+		</div> <!-- intro -->	
+	</div><!-- section-->
 	<!-- /////////////////////////////////// -->
 	<!-- /////////////////////////////////// -->
-</div> <!--close all sections -->
+</div> <!--close all sections fullpage -->
 
 
 
