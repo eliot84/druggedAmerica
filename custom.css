@@ -129,7 +129,7 @@ a:hover{
 
 
 
-
+/* SMALL MULTIPLES CHART HIGHSCHOOL DRUG TRENDS */
 #header{
   border-bottom:1px solid #ccc;
   margin:20px 26px 20px 20px;
@@ -167,7 +167,7 @@ a:hover{
 }
 
 .area{
-  fill:#e2e2e2;
+  fill:#00362B;
   stroke: #888;
   stroke-width: 0.5px;
 }
@@ -179,7 +179,7 @@ a:hover{
 }
 
 .endpoint {
-  fill: steelblue;
+  fill: green;
 }
 
 #filters table{
@@ -195,12 +195,15 @@ a:hover{
   display:block;
   padding:2px 4px;
   font-size:1.1em;
-  color:#919292;
-  background:#F0F4F5;
+  color:#ffffff;
+  background:#00362B;
   cursor:pointer;
   border-left:1px solid #CCCCCC;
   border-bottom:1px solid #CCCCCC;
   border-right:1px solid #CCCCCC;
+  border-top:1px solid #CCCCCC;
+
+  margin-bottom: 10px;
   overflow:hidden;
 }
 
@@ -224,14 +227,14 @@ a:hover{
 }
 
 .label {
-  fill: black;
+  fill: white;
   font-size: 1.1em;
 }
 
 
 .y.axis text, .axislabel {
   font-size: .85em;
-  fill: #888;
+  fill: #ffffff;
 }
 
 
