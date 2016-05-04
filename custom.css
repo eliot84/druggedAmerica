@@ -51,6 +51,7 @@ p{
   margin-left: 1px;
   width: auto;
 }
+
 #source{
   font-size: 12px;
   color: white;
@@ -173,7 +174,7 @@ a:hover{
 
 .line {
   fill:none;
-  stroke:green;
+  /*stroke:green;*/
   stroke-width:1.5px;
 }
 

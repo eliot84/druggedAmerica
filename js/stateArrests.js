@@ -66,13 +66,15 @@ function drawOutbreaks() {
     resolution: 'provinces',
       width: '100%',
         height: '100%',
+    backgroundColor: '#00362B',
+
  chartArea: {
             left: "1%",
             top: "1%",
             height: "94%",
             width: "94%"
         },
-    colorAxis: {colors: ['#91D8F0', '#1426F0']}
+    colorAxis: {colors: ['#ffffff', 'green']}
 
 
   };
