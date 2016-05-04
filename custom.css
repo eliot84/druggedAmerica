@@ -35,18 +35,21 @@ svg {
 
 #content{
   height: auto;
-  width: 350px;
+  width: 450px;
+  margin-left: 20px;
   float: left;
+  background-color: #000000;
 }
 
 p{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #contentInfo{
   font-size: 14px;
   color: white;
   margin-left: 1px;
+  width: auto;
 }
 #source{
   font-size: 12px;
