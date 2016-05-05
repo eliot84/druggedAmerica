@@ -139,7 +139,6 @@ d3.csv("data/olympicMedals.csv", function(error, data) {
   // then data for each, plus mouseovers - a nested selection/enter here
    medal.selectAll("rect")
       .data(function(d) {
-        console.log("array for a rectangle", d);
         return d; })  // this just gets the array for bar segment.
     .enter().append("rect")
       .attr("width", xScale.rangeBand())
@@ -186,6 +185,7 @@ d3.csv("data/olympicMedals.csv", function(error, data) {
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "start")
+        .style("color", "white")
         .text(function(d, i) { return medals_reversed[i].replace(/_/g, " "); });
   }
 

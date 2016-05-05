@@ -38,8 +38,17 @@ svg {
   width: 450px;
   margin-left: 20px;
   float: left;
-  background-color: #000000;
+
 }
+
+label{
+  color: white;
+}
+
+g.legend text{
+  color: white;
+}
+
 
 p{
   font-size: 14px;
@@ -50,6 +59,18 @@ p{
   color: white;
   margin-left: 1px;
   width: auto;
+}
+
+.greenText{
+  color: green;
+}
+
+#contentMultiples{
+  height: auto;
+  width: 1050px;
+  margin-left: 20px;
+  float: left;
+
 }
 
 #source{

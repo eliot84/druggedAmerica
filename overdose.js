@@ -153,7 +153,7 @@
 					.attr("transform","rotate(-90) translate(" + (-height/2) + ",0)")
 					.style("text-anchor", "middle")
 					.attr("dy", -55)
-					.text("Prescription Opioid Sales");
+					.text("National Drug Overdoses per Thousands");
 
 
 

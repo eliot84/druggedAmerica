@@ -91,7 +91,7 @@ var fullwidth = 600;
 					.attr("transform","rotate(-90) translate(" + (-height/2) + ",0)")
 					.style("text-anchor", "middle")
 					.attr("dy", -35)
-					.text("Prescription Opioid Sales");
+					.text("Prescription Drug Sales By Percent");
 					// make the default data button look selected
 				d3.select("button#oeight").classed("selected", true);
 				// handle the click events on the 2 buttons:
