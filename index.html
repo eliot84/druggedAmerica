@@ -65,11 +65,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['startPage', 'firstPage', 'secondPage', '3rdPage', 'page4'],
-				sectionsColor: ['#00362B', '#00362B', '#302013', '#00362B', '#302013'],
+				anchors: ['Home', 'overdoseRates', 'precriptOverdose', 'drugAbuseArrests', 'hsDrugTrends1215', 'ecigads'],
+				sectionsColor: ['#00362B', '#00362B', '#302013', '#00362B', '#302013', '#00362B'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['landPage', 'First page', 'Second page', 'Thirdpage', 'High School Drug Trends']
+				navigationTooltips: ['Drugged America', 'Overdose Rates', 'Prescription Opiod Correlation', 'Drug Abuse Arrests', 'High School Drug Trends 2012 - 15', 'E-Cigarette advertisements 2014']
 			});
 		});
 	</script>
@@ -143,15 +143,19 @@
 	<div class="section" id="section3">
 		<div class="intro">
 			<div id="wrapper">
+				<div id="content">
+					<h1>Drug Abuse Arrests</h1>
+<p id="contentInfo">story stuff goes in here</p><br /><br />
+	<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
+		<br /><br />
+
+		</div>
 			<!-- Drug Abuse Arrests -->
 			
-		<h4>DRUG ABUSE ARRESTS</h4>
 			<div class="holdVis">	
 			<div class="holdStateOutbreaks">
 				<div id="stateOutbreaks" style="margin: 1em"> </div>
-			</div><br />
-		<span class="datasource">Data Source: Center for Disease Control (CDC) </span>
-		<br /><br />
+			</div>
 	
 		</div>
 	</div> <!-- wrapper -->
@@ -173,7 +177,7 @@
 
 		<div id="wrapper">
 			<div id="content">	
-			<h1>High School Drug Trends</h1><br /><br />
+			<h1>High School Drug Trends 2012 - 2015</h1><br /><br />
 			<p id="contentInfo">Based on the small multiples chart below, we can see trends that affect all highschool grade levels as well as grade specific trends. In all grade levels, we see large increases in E-cigeratte usage, while regular cigeratte usage is declining. Based on the data, LSD and MDMA are also inclining across all grade levels, while Methamphetamine are in sharp decline.</p>
 			<p>Tip: Use the grade level tool bar to view the results across the different grade levels.</p>
 			</div>
@@ -197,6 +201,28 @@
 </div> <!-- wrapper -->
 		</div> <!-- intro -->	
 	</div><!-- section-->
+
+	<div class="section " id="section5">
+		<div class="intro">
+			<div id="wrapper">
+				<div id="content">
+					<h1>Lifetime Prevalence Surveys 2013</h1><br /><br />
+					<p id="contentInfo">Three different studies have been conducted to show the lifetime prevalence found within the age group 18 - 25 from the time of first exposure. The Data shows that Alcohol is rated the highest in actual lifetime prevalence of a user followed by Cigarettes and Marijuana. <BR /><BR />The studies conducted came from the National Survey on Drug Use and Health (NSDUH), Monitoring the Future (MTF) and the Youth Risk Behavior Survey (YRBS).</p>
+					<p id="source">Source: 
+					<a href="http://www.samhsa.gov/data/sites/default/files/NSDUHresultsPDFWHTML2013/Web/NSDUHresults2013.htm#3.1.2" target="_blank">National Institute on Drug Abuse</a></p>
+				</div>
+
+				<div id="lifetimeprev"> <div id="form">
+      <label><input type="radio" name="mode" value="bycount" checked>Raw Count</label>
+      <label><input type="radio" name="mode" value="bypercent">As Percent of medals Received</label>
+    </div></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
 	<!-- /////////////////////////////////// -->
 	<!-- /////////////////////////////////// -->
 </div> <!--close all sections fullpage -->
@@ -210,4 +236,5 @@
 <script src="scatterPlot.js"></script>
  <script src="js/drugTrends.js"></script>
   <script src="js/stateArrests.js"></script>
+  <script src="js/stackecigads.js"></script>
 </html>

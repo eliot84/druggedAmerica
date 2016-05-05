@@ -50,7 +50,7 @@ var fullwidth = 600;
 					})
 					.attr("class", function(d){
 						// highlighting some interesting outliers
-						if (d.state === "West Virginia") {
+						if (d.state === "Florida" || d.state === "Kentucky" || d.state === "Nevada") {
 							return "highlighted";
 						}
 						else {
@@ -82,7 +82,7 @@ var fullwidth = 600;
 			svg.append("text")
 					.attr("class", "xlabel")
 					.attr("transform", "translate(" + (width / 2) + " ," +
-								(height + 20) + ")")
+								(height + 30) + ")")
 					.style("text-anchor", "middle")
 					.attr("dy", "12")
 					.text("Overdose Deaths");
@@ -90,7 +90,7 @@ var fullwidth = 600;
 					.attr("class", "ylabel")
 					.attr("transform","rotate(-90) translate(" + (-height/2) + ",0)")
 					.style("text-anchor", "middle")
-					.attr("dy", -25)
+					.attr("dy", -35)
 					.text("Prescription Opioid Sales");
 					// make the default data button look selected
 				d3.select("button#oeight").classed("selected", true);

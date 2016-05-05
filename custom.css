@@ -71,6 +71,16 @@ p{
   float: right;
 }
 
+.holdVis{
+  width: 65%;
+  float: right;
+}
+
+#ecigads{
+    width: 65%;
+  float: right;
+}
+
 a{
   color: white;
 }
@@ -238,3 +248,20 @@ a:hover{
 }
 
 
+/* SCATTER PLOT */
+.dots {
+        fill: silver;
+      }
+
+.highlighted {
+        fill: green;
+      }
+
+.xlabel{
+        font-size: 15px;
+        fill: white;
+      }
+      .ylabel{
+        font-size: 15px;
+        fill: white;
+      }
